@@ -8,6 +8,7 @@ import numpy as np
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+import utils as ut
 
 # load environment variables
 load_dotenv()
@@ -64,11 +65,22 @@ def make_predictions(input_df, input_dict):
     }
 
     avg_probability = np.mean(list(probabilities.values()))
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        fig = ut.create_gauge_chart(avg_probability)
+        st.plotly_chart(fig, use_container_width=True)
+        st.write(f"The customer has a {avg_probability:.2%} probability of churning.")
+
+    with col2:
+        fig_probs = ut.create_model_probability_chart(probabilities)
+        st.plotly_chart(fig_probs, use_container_width=True)
     
-    st.markdown('### Model Probabilities')
-    for model, prob in probabilities.items():
-        st.write(f"{model} {prob}")
-    st.write(f"Average Probability: {avg_probability}")
+    # st.markdown('### Model Probabilities')
+    # for model, prob in probabilities.items():
+    #     st.write(f"{model} {prob}")
+    # st.write(f"Average Probability: {avg_probability}")
 
     return avg_probability
 
