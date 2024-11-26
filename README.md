@@ -3,7 +3,7 @@
 ## Overview
 An end-to-end machine learning application that predicts customer churn probability and generates personalized engagement strategies using ML models and LLMs.
 
-![Streamlit App Demo](path_to_your_demo_gif.gif)
+![image](https://github.com/user-attachments/assets/56f888ec-994b-41f0-8e52-c0108c79fd6f)
 
 ## 🔥 Features
 - **Multi-Model Prediction**: Ensemble of 9 different ML models including XGBoost, Random Forest, and SVM
@@ -48,26 +48,28 @@ Try out the live application here: [Bank Churn Predictor](https://bank-churn-pre
   streamlit run main.py
 
 ## 📁 Project Structure
+```
 bank-churn-predictor/
-├── main.py # Main Streamlit application
-├── utils.py # Utility functions and visualizations
-├── requirements.txt # Project dependencies
-├── .env # Environment variables (Groq API key)
-├── models/ # Trained ML models
-│ ├── xgb_model.pkl # XGBoost model
-│ ├── nb_model.pkl # Naive Bayes model
-│ ├── rf_model.pkl # Random Forest model
-│ ├── dt_model.pkl # Decision Tree model
-│ ├── svm_model.pkl # SVM model
-│ ├── knn_model.pkl # K-Nearest Neighbors model
-│ ├── voting_clf.pkl # Voting Classifier model
-│ ├── xgboost-SMOTE.pkl # XGBoost with SMOTE
-│ └── xgboost-featureEngineered.pkl # Feature-engineered XGBoost
-├── data/ # Dataset directory
-│ └── churn.csv # Bank customer dataset
-├── notebooks/ # Jupyter notebooks
-│ └── model_training.ipynb # Model training and analysis
-└── README.md # Project documentation
+├── main.py                     # Main Streamlit application
+├── utils.py                    # Utility functions and visualizations
+├── requirements.txt            # Project dependencies
+├── .env                        # Environment variables (Groq API key)
+├── models/                     # Trained ML models
+│   ├── xgb_model.pkl          # XGBoost model
+│   ├── nb_model.pkl           # Naive Bayes model
+│   ├── rf_model.pkl           # Random Forest model
+│   ├── dt_model.pkl           # Decision Tree model
+│   ├── svm_model.pkl          # SVM model
+│   ├── knn_model.pkl          # K-Nearest Neighbors model
+│   ├── voting_clf.pkl         # Voting Classifier model
+│   ├── xgboost-SMOTE.pkl      # XGBoost with SMOTE
+│   └── xgboost-featureEngineered.pkl  # Feature-engineered XGBoost
+├── data/                       # Dataset directory
+│   └── churn.csv              # Bank customer dataset
+├── notebooks/                  # Jupyter notebooks
+│   └── model_training.ipynb    # Model training and analysis
+└── README.md                   # Project documentation
+```
 
 ## 🔮 Future Improvements
 - [ ] Retrain models with different feature engineering approaches
@@ -77,12 +79,9 @@ bank-churn-predictor/
 - [ ] Test models on different churn datasets
 
 ## 📝 Blog Post
-Read about the development process and technical details in my blog post: [Building a Customer Churn Predictor: From ML Models to AI-Driven Engagement](your_blog_post_link)
-
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](link_to_issues).
+Read about the development process and technical details in my blog post: [Building a Customer Churn Predictor: From ML Models to AI-Driven Engagement](https://imalexwang.substack.com/p/how-i-built-a-system-to-predict-and)
 
 ## 📫 Contact
-- LinkedIn: [Your Name](your_linkedin_profile)
-- Twitter: [@yourusername](your_twitter_profile)
-- Blog: [Your Blog](your_blog_url)
+- LinkedIn: [Alex Wang](https://www.linkedin.com/in/alexwang-/)
+- Twitter: [@imalexwang](https://x.com/imalexwang)
+- Blog: [solo diaries](https://imalexwang.substack.com/)
