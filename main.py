@@ -21,7 +21,7 @@ client = OpenAI(
 )
 
 def load_model(filename):
-    with open(filename, "rb") as file:
+    with open(f"models/{filename}", "rb") as file:
         return pickle.load(file)
 
 # load all the models that we trained in google colab so we can use them to form predictions
@@ -167,7 +167,7 @@ def generate_email(probability, input_dict, explanation, surname):
 
 st.title("Customer Churn Prediction")
 
-df = pd.read_csv("churn.csv")
+df = pd.read_csv("data/churn.csv")
 
 customers = [f"{row['CustomerId']} - {row['Surname']}" for _, row in df.iterrows()]
 
