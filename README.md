@@ -50,15 +50,24 @@ Try out the live application here: [Bank Churn Predictor](https://bank-churn-pre
 ## 📁 Project Structure
 bank-churn-predictor/
 ├── main.py # Main Streamlit application
-├── utils.py # Utility functions
+├── utils.py # Utility functions and visualizations
 ├── requirements.txt # Project dependencies
+├── .env # Environment variables (Groq API key)
 ├── models/ # Trained ML models
-│ ├── xgb_model.pkl
-│ ├── rf_model.pkl
-│ └── ...
+│ ├── xgb_model.pkl # XGBoost model
+│ ├── nb_model.pkl # Naive Bayes model
+│ ├── rf_model.pkl # Random Forest model
+│ ├── dt_model.pkl # Decision Tree model
+│ ├── svm_model.pkl # SVM model
+│ ├── knn_model.pkl # K-Nearest Neighbors model
+│ ├── voting_clf.pkl # Voting Classifier model
+│ ├── xgboost-SMOTE.pkl # XGBoost with SMOTE
+│ └── xgboost-featureEngineered.pkl # Feature-engineered XGBoost
+├── data/ # Dataset directory
+│ └── churn.csv # Bank customer dataset
 ├── notebooks/ # Jupyter notebooks
 │ └── model_training.ipynb # Model training and analysis
-└── README.md
+└── README.md # Project documentation
 
 ## 🔮 Future Improvements
 - [ ] Retrain models with different feature engineering approaches
