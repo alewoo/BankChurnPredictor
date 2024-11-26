@@ -34,18 +34,35 @@ Try out the live application here: [Bank Churn Predictor](https://bank-churn-pre
 
 ## 🛠️ Installation & Setup
 
-1. Clone the repository
-  bash
-  git clone https://github.com/yourusername/bank-churn-predictor.git
-  cd bank-churn-predictor
-2. Install dependencies
-  bash
-  pip install -r requirements.txt
-3. Set up environment variables
-  Create a .env file and add your Groq API key
-  GROQ_API_KEY=your_api_key_here
-4. Run the application
-  streamlit run main.py
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/bank-churn-predictor.git
+cd bank-churn-predictor
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Set up environment variables**
+```bash
+# Create a .env file in the root directory and add:
+GROQ_API_KEY=your_api_key_here
+```
+
+4. **Run the application**
+```bash
+streamlit run main.py
+```
+
+### Prerequisites
+- Python 3.11 or higher
+- Groq API key (get it from [Groq's website](https://groq.com))
+- Git
+
+### Note
+Make sure all model files (`.pkl`) are in the `models/` directory and the dataset (`churn.csv`) is in the `data/` directory before running the application.
 
 ## 📁 Project Structure
 ```
@@ -79,7 +96,7 @@ bank-churn-predictor/
 - [ ] Test models on different churn datasets
 
 ## 📝 Blog Post
-Read about the development process and technical details in my blog post: [Building a Customer Churn Predictor: From ML Models to AI-Driven Engagement](https://imalexwang.substack.com/p/how-i-built-a-system-to-predict-and)
+Read about the development process and technical details in my blog post: [How I Built a System to Predict and Prevent Bank Customer Churn Using ML, LLMs, and Streamlit](https://imalexwang.substack.com/p/how-i-built-a-system-to-predict-and)
 
 ## 📫 Contact
 - LinkedIn: [Alex Wang](https://www.linkedin.com/in/alexwang-/)
