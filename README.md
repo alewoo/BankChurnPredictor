@@ -1,9 +1,9 @@
 # Bank Customer Churn Predictor 🏦
 
+![image](https://github.com/user-attachments/assets/56f888ec-994b-41f0-8e52-c0108c79fd6f)
+
 ## Overview
 An end-to-end machine learning application that predicts customer churn probability and generates personalized engagement strategies using ML models and LLMs.
-
-![image](https://github.com/user-attachments/assets/56f888ec-994b-41f0-8e52-c0108c79fd6f)
 
 ## 🔥 Features
 - **Multi-Model Prediction**: Ensemble of 9 different ML models including XGBoost, Random Forest, and SVM
